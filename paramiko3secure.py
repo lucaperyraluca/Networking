@@ -8,12 +8,17 @@ ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
 password = getpass.getpass('Enter password:')
 
+#Change the ip for the ip of your device:
+
 router = {'hostname': '198.18.133.214' , 'port' : '22' , 'username' : 'admin', 'password': password }
 
 print(f'connecting to {router["hostname"]}')
 
 
 ssh_client.connect(**router, look_for_keys=False, allow_agent=False)
+
+
+#The time.sleep it may be necessary change depending on the time the entered commands take
 
 shell = ssh_client.invoke_shell()
 shell.send('terminal length 0\n')
