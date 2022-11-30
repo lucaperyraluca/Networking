@@ -1,7 +1,7 @@
 # Networking
 Some code to automate networking...
 
-This code just automate the connection (by SSH) to a device and execute the commands that are needed.
+This code just automate the connection (by SSH) to a device, execute the commands that are needed and show the output.
 
 In this case I used *"getpass"* like a secure action to prevent the exposition of the passwords. Its important have in mind that in Pycharm will not work correctly, and is neccesary execute it in a terminal (like cmd). It was successfully tested in Visual Studio Code.
 
