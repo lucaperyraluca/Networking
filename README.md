@@ -19,6 +19,6 @@ ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
 #Change the ip for the ip of your device:
 
-router = {'hostname': '198.18.133.214' , 'port' : '22' , 'username' : 'admin', 'password': 'passwordintextplane' }
+router = {'hostname': 'the_device_ip' , 'port' : '22' , 'username' : 'the_username', 'password': 'passwordintextplane' }
 
 
