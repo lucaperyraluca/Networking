@@ -8,7 +8,7 @@ ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
 password = getpass.getpass('Enter password:')
 
-#Change the ip for the ip of your device:
+#Change the ip for the ip of your device, and the user:
 
 router = {'hostname': '198.18.133.214' , 'port' : '22' , 'username' : 'admin', 'password': password }
 
